@@ -1,0 +1,22 @@
+{% load static %}
+{% block extraStyles %}
+    <link rel="stylesheet" href="{% static 'css/contacto.css' %}">
+{% endblock %}
+
+<form action="">
+    <h3>Contacto</h3>
+    <label for="">Nombre completo:</label>
+    <input type="text">
+
+    <label for="">Correo electronico:</label>
+    <input type="text">
+
+    <label for="">Asunto:</label>
+    <input type="text">
+
+    <label for="">Mensaje:</label>
+    <textarea name="" id="" cols="15" rows="10"></textarea>
+
+    <input type="submit" value="Enviar" class="button button-sucess">
+
+</form>

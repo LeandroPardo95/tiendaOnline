@@ -1,0 +1,57 @@
+/* cambiar los colores por las variables!! */ 
+
+.tienda {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:800px) {
+    .tienda {
+        justify-content: space-around;
+    }
+}
+.card {
+    width: 200px;
+    height: 270px;
+    margin-top: 50px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.card figure img {
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+}
+.card .datos {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.card .datos .textos {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.card .datos .textos .precio {
+    font-weight: 800;
+}
+.card .datos .textos .detalle {
+    color: #353434;
+}
+.card .datos button {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-image: url(../images/cart-plus.svg);
+    background-color: #acd9b2;
+    background-position: center center;
+    border: none;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    cursor: pointer;
+}
+.card .datos button:hover {
+    background-color: #51ac5d;
+}

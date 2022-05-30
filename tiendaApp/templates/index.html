@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extraStyles %} <link rel="stylesheet" href="{% static 'css/tienda.css' %}"> {% endblock %}
+
+{% block content %}
+<style>
+    .carrito {
+        border:1px solid blue;
+        padding:5px;
+        /*width: 500px;*/
+    }
+</style>
+<!-- test de carro -->
+<div class="carrito">
+    <template id="template-carro">
+        <div class="item-carro"></div>
+    </template>
+</div>
+<!-- fin de test de carro -->
+
+
+<section id="tienda">
+    <div class="tienda">
+
+<!-- modelo de presentacion para los productos -->
+<template id="#template-card">
+    <div class="card">
+        <figure>
+            <img>
+        </figure>
+        <div class="datos">
+            <div class="textos">
+                <span class="precio"></span>
+                <span class="detalle"></span>
+            </div>
+            <button></button>
+        </div>
+    </div>
+</template>
+<!-- fin del modelo. -->
+
+
+{% endblock %}
+
+{% block extraJS %}
+    <script src="{% static 'js/tienda.js' %}" type="module"></script>
+{% endblock %}
